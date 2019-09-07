@@ -1,0 +1,13 @@
+def get_avg_metor_scores():
+  total = 0
+  avg = 0
+  n = len(test_img)
+  for z in range(n):
+    pic = list(encoding_test.keys())[z]
+    references = descriptions[pic.split('.')[0]]
+    image = encoding_test[pic].reshape((1,2048))
+    predicted = greedySearch(image)
+    cur_m_score = meteor_scores(references,predicted)
+    total += cur_m_score
+    avg = total / n
+return avg
