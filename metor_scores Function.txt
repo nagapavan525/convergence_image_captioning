@@ -1,3 +1,12 @@
+import nltk
+pip install --upgrade nltk
+
+from nltk.translate.meteor_score import meteor_score
+from nltk.stem.porter import PorterStemmer
+from nltk.corpus import wordnet
+import nltk
+nltk.download('wordnet')
+
 def get_avg_metor_scores():
   total = 0
   avg = 0
