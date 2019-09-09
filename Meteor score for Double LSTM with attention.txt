@@ -1,0 +1,4 @@
+Image Captioning with Double layer LSTM with attention model
+1. Meteor Score with Greedy Search: 0.2938
+2. Meteor Score with Beam Search with K = 10: 0.26904
+3. Meteor Score with Beam Search with K = 20:
